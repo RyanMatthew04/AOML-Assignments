@@ -3,9 +3,13 @@ import pandas as pd
 import numpy as np
 
 # Load models and encoders outside of the function
-scaler = joblib.load('scaler.pkl')
-encoder = joblib.load('encoder.pkl')
-best_model_knn = joblib.load('best_dt_model.pkl')
+import os
+
+base_dir = os.path.abspath("artifacts")
+scaler = joblib.load(os.path.join(base_dir, "scaler.pkl"))
+encoder = joblib.load(os.path.join(base_dir, "encoder.pkl"))
+best_model_knn = joblib.load(os.path.join(base_dir, "best_dt_model.pkl"))
+
 
 def predict_outcomes(df):
     def categorize_bmi(bmi):
