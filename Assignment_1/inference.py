@@ -57,7 +57,4 @@ def predict_outcomes(df):
     return predicted_classes
 
 
-# Test the function
-df = pd.read_csv('diabetes.csv')
-classes = predict_outcomes(df.head(5))
-print(classes)
+
