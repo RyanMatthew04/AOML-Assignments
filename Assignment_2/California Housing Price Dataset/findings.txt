@@ -1,0 +1,27 @@
+Key Findings:
+
+
+MAE (Mean Absolute Error): The MAE values are quite similar for both models:
+
+Ridge: 49478.63
+Lasso: 49484.47
+Both models have nearly identical MAE, indicating similar performance in terms of the average magnitude of errors.
+
+
+MSE (Mean Squared Error): The MSE is also similar but shows slightly higher values for the Lasso model:
+
+Ridge: 4662500751.29
+Lasso: 4664572248.56
+This suggests that Lasso has slightly larger squared errors, which may indicate it is more sensitive to larger deviations in certain instances.
+
+
+RMSE (Root Mean Squared Error): Similar to MSE, the RMSE values are higher for Lasso:
+
+Ridge: 68282.51
+Lasso: 68297.67
+This confirms that the Lasso model has a slightly higher magnitude of error overall compared to Ridge.
+
+
+Conclusion:
+Ridge Regression outperforms Lasso Regression by a small margin based on all three metrics (MAE, MSE, and RMSE).
+The differences are not large but suggest that Ridge Regression has marginally better predictive accuracy and is less affected by large errors than Lasso in this particular dataset.
