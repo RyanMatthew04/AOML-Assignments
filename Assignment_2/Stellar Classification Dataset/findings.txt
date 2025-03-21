@@ -1,0 +1,23 @@
+Key Findings:
+
+CLASSIFICATION REPORT:
+
+Class 2 has perfect performance (precision, recall, and F1-score of 1.00), indicating that the model can correctly classify every instance of this class.
+
+Class 0 performs very well with high precision (0.98), recall (0.99), and F1-score (0.98), suggesting the model is very accurate in predicting this class as well.
+
+Class 1 has a slightly lower recall (0.93), indicating that the model misses some instances of this class. However, the precision (0.97) and F1-score (0.95) still show solid performance.
+
+The overall accuracy of 98% indicates that the model is performing excellently, with only a small portion of incorrect predictions.
+
+Conclusion:
+The model performs excellently on the Stellar Classification Dataset with a high overall accuracy and balanced metrics for precision, recall, and F1-score.
+The slightly lower recall for Class 1 could be improved by fine-tuning the model, especially if Class 1 instances are critical to identify.
+Class 2 is being predicted perfectly, while Class 0 also shows strong performance, making this model highly reliable for star classification tasks.
+
+CONFUSION MATRIX:
+
+This confusion matrix shows a model's performance classifying galaxies, QSOs, and stars.
+It excels at identifying galaxies and stars, with high correct classification rates.
+However, there's notable confusion between galaxies and QSOs, with some QSOs being misclassified as galaxies.  
+Further analysis is needed to understand and address this issue for better overall performance.
